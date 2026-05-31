@@ -6,6 +6,7 @@ import {
   TAX_YEARS,
   DEFAULT_YEAR,
 } from './taxLogic.js'
+import Backdrop from './Backdrop.jsx'
 
 const PERIODS = {
   yearly: { label: 'Yearly', factor: 1 },
@@ -75,6 +76,7 @@ export default function App() {
 
   return (
     <div className="page">
+      <Backdrop />
       <header className="header">
         <div className="flag-dot" aria-hidden />
         <div>

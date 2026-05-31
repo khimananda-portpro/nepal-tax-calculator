@@ -16,12 +16,64 @@
 
 body {
   margin: 0;
-  background: radial-gradient(1200px 600px at 80% -10%, #1d2230 0%, var(--bg) 55%);
+  /* Himalayan dawn: indigo night sky melting into a warm horizon glow. */
+  background:
+    radial-gradient(900px 500px at 50% 92%, rgba(255, 138, 92, 0.10), transparent 60%),
+    linear-gradient(180deg, #0a0d16 0%, #11162400 35%, #14101c 70%, #1a1320 100%),
+    radial-gradient(1200px 700px at 80% -10%, #1d2230 0%, var(--bg) 55%);
   color: var(--text);
   min-height: 100vh;
 }
 
+/* ---- Backdrop ---- */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bd-sun {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  width: 360px;
+  height: 360px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 196, 140, 0.35) 0%, rgba(255, 150, 100, 0.12) 35%, transparent 68%);
+  filter: blur(4px);
+}
+
+.bd-map {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1100px, 120vw);
+  color: #aeb9d6;
+  opacity: 0.10;
+}
+
+.bd-mountains {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: clamp(280px, 46vh, 460px);
+}
+
+.range { stroke: rgba(255, 255, 255, 0.04); stroke-width: 1; }
+.range-back { fill: #1a2030; opacity: 0.7; }
+.range-mid { fill: #232a3d; }
+.range-front { fill: #2c3346; }
+.snow { fill: #e9eefb; opacity: 0.9; }
+
 .page {
+  position: relative;
+  z-index: 1;
   max-width: 980px;
   margin: 0 auto;
   padding: 40px 20px 60px;
@@ -67,10 +119,13 @@ h1 {
 }
 
 .card {
-  background: var(--card);
+  background: rgba(28, 33, 44, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
 }
 
 .form-card { display: flex; flex-direction: column; gap: 18px; }
