@@ -37,23 +37,38 @@ body {
 .bd-sun {
   position: absolute;
   left: 50%;
-  bottom: 18%;
-  width: 360px;
-  height: 360px;
+  bottom: 14%;
+  width: clamp(340px, 40vw, 520px);
+  aspect-ratio: 1;
   transform: translateX(-50%);
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 196, 140, 0.35) 0%, rgba(255, 150, 100, 0.12) 35%, transparent 68%);
-  filter: blur(4px);
+  background: radial-gradient(circle, rgba(255, 206, 150, 0.42) 0%, rgba(255, 150, 100, 0.16) 38%, transparent 70%);
+  filter: blur(6px);
 }
 
 .bd-map {
   position: absolute;
-  top: 8%;
+  top: 6%;
   left: 50%;
   transform: translateX(-50%);
-  width: min(1100px, 120vw);
+  width: min(900px, 110vw);
   color: #aeb9d6;
-  opacity: 0.10;
+  opacity: 0.08;
+}
+
+/* Seated Buddha silhouetted against the sunrise */
+.bd-buddha {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+  width: clamp(190px, 26vw, 340px);
+  height: auto;
+}
+.bd-figure {
+  fill: #0a0e18;
+  stroke: rgba(255, 205, 155, 0.30);
+  stroke-width: 1.5;
 }
 
 .bd-mountains {
@@ -119,9 +134,9 @@ h1 {
 }
 
 .card {
-  background: rgba(28, 33, 44, 0.78);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(28, 33, 44, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 24px;

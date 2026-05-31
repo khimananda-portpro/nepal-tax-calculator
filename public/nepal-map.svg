@@ -1,19 +1,15 @@
-// Decorative Himalayan backdrop (purely cosmetic, aria-hidden):
-//   sunrise glow → faint accurate Nepal map watermark → seated Buddha
-//   silhouette haloed by the sun → layered mountain range with snowy Everest.
-//
-// The Nepal map path is the real country outline traced by potrace
-// (source: mapsicon, ISO code "np"), recoloured via currentColor.
-export default function Backdrop() {
-  return (
-    <div className="backdrop" aria-hidden="true">
-      {/* Sunrise glow behind the Buddha / over the peaks */}
-      <div className="bd-sun" />
-
-      {/* Accurate Nepal map outline watermark */}
-      <svg className="bd-map" viewBox="0 0 1024 1024" preserveAspectRatio="xMidYMid meet">
-        <g transform="translate(0,1024) scale(0.1,-0.1)" fill="currentColor" stroke="none">
-          <path d="M1760 7545 c-19 -7 -58 -14 -87 -14 -49 -1 -54 -3 -78 -38 -21 -31
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1024.000000pt" height="1024.000000pt" viewBox="0 0 1024.000000 1024.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.10, written by Peter Selinger 2001-2011
+</metadata>
+<g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M1760 7545 c-19 -7 -58 -14 -87 -14 -49 -1 -54 -3 -78 -38 -21 -31
 -25 -49 -25 -106 0 -62 -3 -72 -32 -108 -22 -28 -39 -39 -58 -39 -15 0 -35 -9
 -44 -19 -15 -16 -16 -25 -6 -61 10 -38 9 -45 -8 -62 -18 -19 -21 -19 -50 -4
 -17 9 -54 41 -83 71 -47 50 -217 185 -233 185 -3 0 -6 -12 -6 -27 0 -37 -10
@@ -91,42 +87,6 @@ export default function Backdrop() {
 -146 33 -56 -2 -73 2 -112 25 -56 33 -62 42 -36 56 11 6 20 20 20 31 0 16 -19
 29 -86 60 -47 22 -88 48 -91 57 -23 62 -82 102 -150 102 -29 0 -53 4 -53 9 0
 19 -67 49 -125 56 -63 7 -172 40 -192 59 -9 8 -9 21 0 54 l11 42 -94 95 -95
-95 -90 -1 c-75 -2 -105 3 -175 26 -102 34 -279 44 -340 20z" />
-        </g>
-      </svg>
-
-      {/* Gautam Buddha — born in Lumbini, Nepal — seated in meditation */}
-      <svg className="bd-buddha" viewBox="0 0 240 280" preserveAspectRatio="xMidYMax meet">
-        <g className="bd-figure">
-          <ellipse cx="120" cy="24" rx="10" ry="13" />
-          <circle cx="120" cy="56" r="30" />
-          <path
-            d="M120,84 C96,86 80,99 72,124 C61,156 45,182 41,214
-               C40,231 51,239 73,241 L167,241
-               C189,239 200,231 199,214 C195,182 179,156 168,124
-               C160,99 144,86 120,84 Z"
-          />
-        </g>
-      </svg>
-
-      {/* Himalayan range */}
-      <svg className="bd-mountains" viewBox="0 0 1440 360" preserveAspectRatio="none">
-        <polygon
-          className="range range-back"
-          points="0,250 170,150 330,220 500,110 680,200 860,90 1040,190 1230,130 1440,220 1440,360 0,360"
-        />
-        <polygon
-          className="range range-mid"
-          points="0,290 200,200 380,270 560,170 720,40 900,190 1100,250 1300,180 1440,270 1440,360 0,360"
-        />
-        <polygon className="snow" points="664,108 720,40 778,110 748,86 720,64 692,86" />
-        <polygon className="snow" points="520,210 560,170 604,212 582,196 560,182 538,196" />
-        <polygon className="snow" points="852,128 900,90 948,130 924,114 900,102 876,114" />
-        <polygon
-          className="range range-front"
-          points="0,330 260,250 500,315 720,235 960,305 1200,245 1440,315 1440,360 0,360"
-        />
-      </svg>
-    </div>
-  )
-}
+95 -90 -1 c-75 -2 -105 3 -175 26 -102 34 -279 44 -340 20z"/>
+</g>
+</svg>
