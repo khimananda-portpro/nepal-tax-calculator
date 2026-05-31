@@ -276,6 +276,33 @@ export default function App() {
       <footer className="footer">
         <p>{yearDef.note}</p>
         <p>For guidance only — verify with a tax professional or the Inland Revenue Department.</p>
+        <p className="credits">
+          Backdrop imagery via Wikimedia Commons:{' '}
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Mount Everest
+          </a>{' '}
+          © shrimpo1967 (CC BY-SA 2.0) ·{' '}
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Tian_Tan_Buddha_Front_View.jpg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Tian Tan Buddha
+          </a>{' '}
+          © Tessa Bury (CC BY 4.0) ·{' '}
+          <a
+            href="https://commons.wikimedia.org/wiki/File:New_Map_of_Nepal_District_and_Province.svg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            New Map of Nepal
+          </a>{' '}
+          (Dept. of Survey, 2020)
+        </p>
       </footer>
     </div>
   )

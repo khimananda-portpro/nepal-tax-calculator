@@ -27,3 +27,11 @@ npm run preview
 - Framework preset: **Vite**
 - Build command: `npm run build`
 - Build output directory: `dist`
+
+## Image credits
+
+Backdrop imagery from Wikimedia Commons:
+
+- [Mount Everest](https://commons.wikimedia.org/wiki/File:Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg) © shrimpo1967 — CC BY-SA 2.0
+- [Tian Tan Buddha (front view)](https://commons.wikimedia.org/wiki/File:Tian_Tan_Buddha_Front_View.jpg) © Tessa Bury — CC BY 4.0
+- [New Map of Nepal](https://commons.wikimedia.org/wiki/File:New_Map_of_Nepal_District_and_Province.svg) — Nepal Dept. of Survey, 2020

@@ -34,58 +34,43 @@ body {
   pointer-events: none;
 }
 
-.bd-sun {
-  position: absolute;
-  left: 50%;
-  bottom: 12%;
-  width: clamp(340px, 40vw, 520px);
-  aspect-ratio: 1;
-  transform: translateX(-50%);
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 214, 150, 0.55) 0%, rgba(255, 168, 110, 0.20) 38%, transparent 70%);
-  filter: blur(6px);
-}
-
-/* Official Nepal map floating in the sky, above the mountain range. */
+/* Official Nepal map, faint watermark in the sky. */
 .bd-map {
   position: absolute;
-  top: 4vh;
+  top: 3vh;
   left: 50%;
   transform: translateX(-50%);
-  width: min(1400px, 94vw);
+  width: min(1300px, 92vw);
   height: auto;
-  opacity: 0.28;
+  opacity: 0.16;
 }
 
-/* Seated Buddha silhouetted against the sunrise */
+/* Real Gautam Buddha photo, cropped to the statue and feathered into the sky. */
 .bd-buddha {
   position: absolute;
   left: 50%;
-  bottom: 15%;
+  bottom: 9%;
   transform: translateX(-50%);
-  width: clamp(190px, 26vw, 340px);
-  height: auto;
-}
-.bd-figure {
-  fill: #0a0e18;
-  stroke: rgba(255, 205, 155, 0.30);
-  stroke-width: 1.5;
+  width: clamp(210px, 27vw, 360px);
+  height: clamp(250px, 33vw, 440px);
+  object-fit: cover;
+  object-position: center top;
+  -webkit-mask-image: radial-gradient(ellipse 50% 56% at 50% 38%, #000 46%, transparent 74%);
+  mask-image: radial-gradient(ellipse 50% 56% at 50% 38%, #000 46%, transparent 74%);
 }
 
-.bd-mountains {
+/* Real Mount Everest photo as the foreground, fading up into the sky. */
+.bd-everest {
   position: absolute;
   left: 0;
-  right: 0;
   bottom: 0;
   width: 100%;
-  height: clamp(280px, 46vh, 460px);
+  height: clamp(320px, 56vh, 620px);
+  object-fit: cover;
+  object-position: center 58%;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 24%, #000 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 24%, #000 100%);
 }
-
-.range { stroke: rgba(255, 255, 255, 0.10); stroke-width: 1; }
-.range-back { fill: #aebfdc; opacity: 0.85; }
-.range-mid { fill: #8395ba; }
-.range-front { fill: #5f7099; }
-.snow { fill: #ffffff; opacity: 0.96; }
 
 .page {
   position: relative;
@@ -395,8 +380,11 @@ h1 {
 
 .footer {
   margin-top: 28px;
-  color: #6b7385;
+  color: #51607a;
   font-size: 0.78rem;
   line-height: 1.5;
   text-align: center;
 }
+.credits { font-size: 0.72rem; opacity: 0.85; }
+.credits a { color: var(--accent-2); text-decoration: none; }
+.credits a:hover { text-decoration: underline; }
