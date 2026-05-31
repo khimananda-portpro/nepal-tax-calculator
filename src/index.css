@@ -46,16 +46,15 @@ body {
   filter: blur(6px);
 }
 
-/* Full-screen Nepal map floating in the sky, above the mountain range. */
+/* Official Nepal map floating in the sky, above the mountain range. */
 .bd-map {
   position: absolute;
-  top: 0;
+  top: 4vh;
   left: 50%;
   transform: translateX(-50%);
-  width: min(1500px, 100vw);
-  height: 76vh;
-  color: #41639c;
-  opacity: 0.26;
+  width: min(1400px, 94vw);
+  height: auto;
+  opacity: 0.28;
 }
 
 /* Seated Buddha silhouetted against the sunrise */
