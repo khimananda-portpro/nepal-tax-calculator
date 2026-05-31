@@ -6,3 +6,8 @@ dist
 # local artifacts
 theme-*.png
 .playwright-mcp
+
+# screenshots
+final.png
+maponly.png
+officialmap.png
